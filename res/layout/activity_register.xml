@@ -1,0 +1,103 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wisatatmg.RegisterActivity" >
+    
+    <TextView
+	      	android:id="@+id/textView1"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_alignParentTop="true"
+	      	android:layout_centerHorizontal="true"
+	      	android:layout_marginTop="20dp"
+	      	android:text="Halaman Registrasi"
+	      	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/reguser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="42dp"
+        android:text="USERNAME"/>
+
+    <EditText
+        android:id="@+id/reguserET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="masukkan username" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reguserET"
+        android:layout_below="@+id/reguserET"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="PASSWORD" />
+
+    <EditText
+        android:id="@+id/regpassET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="masukkan password" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regpassET"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="EMAIL" />
+
+    <EditText
+        android:id="@+id/regemailET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="masukkan email" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="35dp">
+        
+        <Button 
+        android:id="@+id/btndaftar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:onClick="daftar"/>
+
+        </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
